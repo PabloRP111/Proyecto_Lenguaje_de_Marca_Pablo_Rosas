@@ -5,49 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Pablo R</title>
-    <style>
-     @media screen  and (orientation:landscape) {
-        #PortaRetratos{
-            max-width: 1200px;
-            max-height: 800px;
-            align-items: center;
-        }
-    }
-    @media screen  and (orientation:portrait) {
-         #PortaRetratos{
-            max-width: 600px;
-            max-height: 900px;
-            align-items: center;
-         }
-    }
-    </style>
-<link rel="stylesheet" href="Proyecto LM PabloR.css">
+<link rel="stylesheet" type="tex/css" href="Proyecto LM PabloR.css">
 </head>
 <body>
     
      <picture id="portaRetratos">
-        <source media="(orientation:landscape) and (min-width: 1920 px)" srcset= "Original1GRANDE.heic">
-        <source media="(orientation:landscape) and (min-width: 1240 px)" srcset="Original1Mediana.heic">
-        <source media="(orientation:landscape) and (max-width: 640 px)" srcset="Original1Pequena.heic">
-        <source media="(orientation:portrait) and (min-width: 1200 px)" srcset="Original1VerticalGrande.heic">
-        <source media="(orientation:portrait) and (min-width: 900 px)" srcset="Original1VerticalMediano.heic">
-        <source media="(orientation:portrait) and (max-width: 600 px)" srcset="Original1VerticalPequena.heic">
+        <source media="(orientation:landscape) and (min-width: 1920 px)" srcset=".Horizontal1Original.jpg" type="image/jpg">
+        <source media="(orientation:landscape) and (min-width: 800 px)" srcset=".Horizontal2.jpg" type="image/jpg">
+        <source media="(orientation:portrait) and (min-width: 1200 px)" srcset=".Vertical1Original.jpg" type="image/jpg">
+        <source media="(orientation:portrait) and (min-width: 1200 px)" srcset=".Vertical2.jpg" type="image/jpg">
 
-        <source media="(orientation:landscape) and (min-width: 1920 px)" srcset= "Original1GRANDE.webp">
-        <source media="(orientation:landscape) and (min-width: 1240 px)" srcset="Original1Mediana.webp">
-        <source media="(orientation:landscape) and (max-width: 640 px)" srcset="Original1Pequena.webp">
-        <source media="(orientation:portrait) and (min-width: 1200 px)" srcset="Original1VerticalGrande.webp">
-        <source media="(orientation:portrait) and (min-width: 900 px)" srcset="Original1VerticalMediano.webp">
-        <source media="(orientation:portrait) and (max-width: 600 px)" srcset="Original1VerticalPequena.webp">
-       
-        <source media="(orientation:landscape) and (min-width: 1920 px)" srcset= "Original1GRANDE.jpg">
-        <source media="(orientation:landscape) and (min-width: 1240 px)" srcset="Original1Mediana.jpg">
-        <source media="(orientation:landscape) and (max-width: 640 px)" srcset="Original1Pequena.jpg">
-        <source media="(orientation:portrait) and (min-width: 1200 px)" srcset="Original1VerticalGrande.jpg">
-        <source media="(orientation:portrait) and (min-width: 900 px)" srcset="Original1VerticalMediano.jpg">
-        <source media="(orientation:portrait) and (max-width: 600 px)" srcset="Original1VerticalPequena.jpg">
+        <source media="(orientation:landscape) and (min-width: 1920 px)" srcset=".Horizontal1 h.heic" type="image/heic">
+        <source media="(orientation:landscape) and (min-width: 800 px)" srcset=".Horizontal2 h.heic" type="image/heic">
+        <source media="(orientation:portrait) and (min-width: 1200 px)" srcset=".Vertical1 h.heic" type="image/heic">
+        <source media="(orientation:portrait) and (min-width: 1200 px)" srcset=".Vertical2 h" type="image/heic">
 
-        <img id="fotoRepuesto" title="Li lees esto, tu navegador esta muy viejo" alt="FotoRepuesto"  src="Banksy" /> 
+        <source media="(orientation:landscape) and (min-width: 1920 px)" srcset=".Horizontal1web.webp" type="image/webp">
+        <source media="(orientation:landscape) and (min-width: 800 px)" srcset=".Horizontal2web.webp" type="image/webp">
+        <source media="(orientation:portrait) and (min-width: 1200 px)" srcset=".Vertical1web.webp" type="image/webp">
+        <source media="(orientation:portrait) and (min-width: 1200 px)" srcset=".Vertical2web.webp" type="image/webp">
+
+
+        <img id="fotoRepuesto" title="Li lees esto, tu navegador esta muy viejo" alt="I Feel bad Mr. Strarck"  src="./imgRescaladas/Banksy.jpg" /> 
     </picture>
     
 </body>
