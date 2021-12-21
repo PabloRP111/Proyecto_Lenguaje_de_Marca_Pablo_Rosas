@@ -5,29 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Pablo R</title>
-<link rel="stylesheet" type="tex/css" href="Proyecto LM PabloR.css">
+    <style>
+    body{
+        background-color: blueviolet;
+        overflow: hidden;
+        }
+#Contenedor{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: darkmagenta;
+}
+#fotoRepuesto{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    object-fit: cover 
+}
+@media screen and (orientation:landscape) {
+    #portaRetratos{
+        width: 1440px;
+        height: 900px;
+    
+    }
+}
+@media screen and (orientation:portrait) {
+    #portaRetratos{
+        width: 250px;
+        height: 450px;
+    }
+}
+
+    </style>
 </head>
 <body>
-    
+    <div id="Contenedor">
      <picture id="portaRetratos">
-        <source media="(orientation:landscape) and (min-width: 1920 px)" srcset=".Horizontal1Original.jpg" type="image/jpg">
-        <source media="(orientation:landscape) and (min-width: 800 px)" srcset=".Horizontal2.jpg" type="image/jpg">
-        <source media="(orientation:portrait) and (min-width: 1200 px)" srcset=".Vertical1Original.jpg" type="image/jpg">
-        <source media="(orientation:portrait) and (min-width: 600 px)" srcset=".Vertical2.jpg" type="image/jpg">
 
-        <source media="(orientation:landscape) and (min-width: 1920 px)" srcset=".Horizontal1 h.heic" type="image/heic">
-        <source media="(orientation:landscape) and (min-width: 800 px)" srcset=".Horizontal2 h.heic" type="image/heic">
-        <source media="(orientation:portrait) and (min-width: 1200 px)" srcset=".Vertical1 h.heic" type="image/heic">
-        <source media="(orientation:portrait) and (min-width: 600 px)" srcset=".Vertical2 h" type="image/heic">
+        
+        <source media="(orientation:landscape) and (min-width: 1920px)" srcset="./img/Horizontal1h.heic" type="image/heic">
+        <source media="(orientation:landscape) and (min-width: 800px)" srcset="./img/Horizontal2h.heic" type="image/heic">
+        <source media="(orientation:portrait) and (min-width: 1200px)" srcset="./img/Vertical1h.heic" type="image/heic">
+        <source media="(orientation:portrait) and (min-width: 600px)" srcset="./img/Vertical2h.heic" type="image/heic">
 
-        <source media="(orientation:landscape) and (min-width: 1920 px)" srcset=".Horizontal1web.webp" type="image/webp">
-        <source media="(orientation:landscape) and (min-width: 800 px)" srcset=".Horizontal2web.webp" type="image/webp">
-        <source media="(orientation:portrait) and (min-width: 1200 px)" srcset=".Vertical1web.webp" type="image/webp">
-        <source media="(orientation:portrait) and (min-width: 600 px)" srcset=".Vertical2web.webp" type="image/webp">
+        <source media="(orientation:landscape) and (min-width: 1920px)" srcset="./img/Horizontal1web.webp" type="image/webp">
+        <source media="(orientation:landscape) and (min-width: 800px)" srcset="./img/Horizontal2web.webp" type="image/webp">
+        <source media="(orientation:portrait) and (min-width: 1200px)" srcset="./img/Vertical1web.webp" type="image/webp">
+        <source media="(orientation:portrait) and (min-width: 600px)" srcset="./img/Vertical2web.webp" type="image/webp">
 
+        <source media="(orientation:landscape) and (min-width: 1920px)" srcset="./img/Horizontal1.jpg" type="image/jpg">
+        <source media="(orientation:landscape) and (min-width: 800px)" srcset="./img/Horizontal2.jpg" type="image/jpg">
+        <source media="(orientation:portrait) and (min-width: 1200px)" srcset="./img/Vertical1.jpg" type="image/jpg">
+        <source media="(orientation:portrait) and (min-width: 600px)" srcset="./img/Vertical2.jpg" type="image/jpg">
 
-        <img id="fotoRepuesto" title="Li lees esto, tu navegador esta muy viejo" alt="I Feel bad Mr. Strarck"  src="./imgRescaladas/Banksy.jpg" /> 
+        <img id="fotoRepuesto" title="Li lees esto, tu navegador esta muy viejo" alt="I Feel bad Mr. Strarck"  src="./img/Vertical1.jpg" /> 
+
     </picture>
-    
+    </div>
+
 </body>
 </html>
